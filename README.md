@@ -12,9 +12,11 @@
 ├── README.md
 ├── dataTransformer.js
 ├── debounce.js
+├── debouncedExample.js
 ├── fibonacci.js
 ├── stackByLinkedList.js
 ├── throttle.js
+├── throttleExample.js
 └── useForm.js
 ```
 
@@ -32,6 +34,10 @@
 
 實作 Debounce，在 delay 時間內如果重新觸發會取消前一次並保留當下觸發的執行。
 
+### `debouncedExample.js`
+
+以文字輸入的範例敘述 Debounce 的運作方式。
+
 ### `fibonacci.js`
 
 實作 Fibonacci number（費式數列），建立函式 `fibonacci` 代入參數 `position`，`position` 表示的是想要得到 fibonacci sequence 中的第幾個數字的值。
@@ -47,6 +53,10 @@
 ### `throttle.js`
 
 實作 Throttle，在觸發後的 timeout 時間內只會執行一次。
+
+### `throttleExample.js`
+
+以 scroll 的範例敘述 Throttle 的運作方式。
 
 ### `useForm.js`
 

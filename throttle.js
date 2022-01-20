@@ -13,3 +13,5 @@ function throttle(func, timeout = 500) {
     }
   };
 }
+
+export default throttle;
