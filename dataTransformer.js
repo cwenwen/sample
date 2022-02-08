@@ -1,6 +1,6 @@
 function dataTransformer(userIds, userOrders, userData, orderData) {
   const result = userIds.map(id => {
-    const { orderIds } = userOrders.find(data => data.userId === id);
+    const orderIds = userOrders.find(data => data.userId === id)?.orderIds;
 
     return {
       user: {
@@ -8,9 +8,9 @@ function dataTransformer(userIds, userOrders, userData, orderData) {
         name: userData[id],
       },
       orders:
-        orderIds.length === 0
+        orderIds?.length === 0
           ? []
-          : orderIds.map(orderId => ({
+          : orderIds?.map(orderId => ({
               id: orderId,
               name: orderData[orderId].name,
               price: orderData[orderId].price,
